@@ -106,5 +106,13 @@
       <h6>jmickler20@gmail.com</h6>
     </div>
   </div>
+  <script>
+    // Prevent long-press save/open image on mobile
+    const img = document.querySelector('.rounded-circle');
+    if (img) {
+      img.addEventListener('touchstart', function(e) { e.preventDefault(); });
+      img.addEventListener('touchend', function(e) { e.preventDefault(); });
+    }
+  </script>
 </body>
 </html>
